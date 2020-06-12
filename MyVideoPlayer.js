@@ -4,7 +4,7 @@ import { WebView } from "react-native-webview";
 import Constants from "expo-constants";
 
 // API key for Youtube
-const API_KEY = "AIzaSyD0F7YTY-SJA6GH7dEl2V4pWwpc-8xYzns";
+const API_KEY = "API_KEY";
 
 function MyVideoPlayer({ route }) {
   const [channelTitle, setChannelTitle] = useState("");
