@@ -14,9 +14,6 @@ import {
 import myJson from "./youtube_cat_search.json";
 const data = myJson.items;
 
-// API key for Youtube
-const API_KEY = "AIzaSyD0F7YTY-SJA6GH7dEl2V4pWwpc-8xYzns";
-
 // dimensions of window
 const window = Dimensions.get("window");
 
