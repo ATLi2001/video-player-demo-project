@@ -10,14 +10,12 @@ import {
   Text,
 } from "react-native";
 
-// from youtube api, a search query for "cat" returned the following json file
-import myJson from "./youtube_cat_search.json";
-const data = myJson.items;
-
 // dimensions of window
 const window = Dimensions.get("window");
 
-function DisplaySearchResults({ navigation }) {
+function DisplaySearchResults({ route, navigation }) {
+  const { data } = route.params;
+
   // separator between each video search result
   renderSeparator = () => {
     return <View style={styles.separator} />;
