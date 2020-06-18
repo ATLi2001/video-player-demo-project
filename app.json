@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "vimeo-demo-project",
-    "slug": "vimeo-demo-project",
+    "name": "video-player-demo-project",
+    "slug": "video-player-demo-project",
     "platforms": [
       "ios",
       "android",

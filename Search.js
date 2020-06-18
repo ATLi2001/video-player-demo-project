@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import {
   TouchableOpacity,
-  TouchableWithoutFeedback,
   View,
   Text,
   TextInput,
+  Image,
   StyleSheet,
-  Keyboard,
 } from "react-native";
 
 // API key for Youtube
@@ -18,6 +17,7 @@ function Search({ navigation }) {
 
   return (
     <View style={styles.container}>
+      <Image source={require("./Cuvids.png")} style={styles.cuvImg} />
       <TextInput
         style={styles.searchBar}
         placeholder="What Videos Are You Looking For?"
@@ -50,6 +50,7 @@ function Search({ navigation }) {
         <TouchableOpacity
           style={styles.button}
           onPress={() => setNumVids(numVids - 1)}
+          disabled={numVids == 0}
         >
           <Text style={styles.text}>-</Text>
         </TouchableOpacity>
@@ -65,8 +66,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "flex-start",
   },
+  cuvImg: {
+    height: 100,
+    width: 300,
+    margin: 30,
+    alignContent: "flex-start",
+  },
   numVidsContainer: {
     flexDirection: "row",
+    alignContent: "space-around",
+    marginTop: 15,
   },
   numVidsText: {
     justifyContent: "center",
@@ -74,9 +83,11 @@ const styles = StyleSheet.create({
   },
   button: {
     alignItems: "center",
-    backgroundColor: "#DDDDDD",
+    backgroundColor: "#45B39D",
+    borderRadius: 10,
+    width: 40,
     padding: 10,
-    margin: 8,
+    margin: 5,
   },
   text: {
     fontSize: 20,
