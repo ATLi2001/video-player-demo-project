@@ -33,6 +33,7 @@ function MyVideoPlayer({ route }) {
         <WebView
           javaScriptEnabled={true}
           domStorageEnabled={true}
+          allowsFullscreenVideo={true}
           source={{ uri: `https://www.youtube.com/embed/${videoId}` }}
           renderLoading={() => (
             <ActivityIndicator size="large" style={styles.loading} />
