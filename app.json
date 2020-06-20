@@ -2,11 +2,7 @@
   "expo": {
     "name": "video-player-demo-project",
     "slug": "video-player-demo-project",
-    "platforms": [
-      "ios",
-      "android",
-      "web"
-    ],
+    "platforms": ["ios", "android", "web"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,11 +14,14 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "bundleIdentifier": "io.cuvids.mobiledemo",
+      "buildNumber": "1.0.0"
+    },
+    "android": {
+      "package": "io.cuvids.mobiledemo",
+      "versionCode": 1
     }
   }
 }
